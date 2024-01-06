@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        table row  : 행추가
+        table data : 열추가
+
+    -->
+  <table border="1px solid pink" width="500px" align="center">
+    <caption>메뉴</caption>
+    <br>
+    <tr bgcolor="yellow" height="50px">
+      <th>번호</th>
+      <th>음식</th>
+      <th>가격</th>
+      <th>개수</th>
+    </tr>
+
+    <tr align="center">
+        <td>1번</td>
+        <td>육회</td>
+        <td>33,000원</td>
+        <td rowspan="2">10개</td>
+    </tr>
+
+    <tr align="center">
+        <td>2번</td>
+        <td>육회</td>
+        <td>33,000원</td>
+    </tr>
+
+    <tr align="center">
+        <td>3번</td>
+        <td>육회</td>
+        <td colspan="2">33,000원</td>
+        
+    </tr>
+  </table>
+</body>
+</html>

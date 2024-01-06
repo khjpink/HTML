@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 밑에 서브밋 누르면 서버의 주소 test에 전달됨 -->
+  <form action="test">
+
+    ID : <input readonly maxlength="10" type="text" placeholder="아이디 입력">
+    <br>
+    
+    PW : <input type="password" placeholder="비번 입력">
+    <br>
+
+    EMAIL : <input type="email" placeholder="이메일 입력">
+    <br>
+
+    <span>이름 : </span>
+    <input type="text" value="" maxlength="5">
+    <br>
+
+    FILE : 
+    <input type="file">
+    <br>
+
+    COLOR : 
+    <input type="color">
+    <br>    
+
+    <!--name을 같게 해줘야 같은그룹이 됨-->
+    <!-- 모든 인풋태그에는 네임 작성! 서버쪽에 데이터 꺼내올 때 컴터가 구분할 수 있도록해줌 -->
+    <span>남자</span><input type="radio" name="gender" value="남자">
+    <span>여자</span><input type="radio" name="gender" value="여자">
+    <br>   
+   
+    <span>공부 : </span><input type="checkbox" name="hobby" value="공부">
+    <span>운동 : </span><input type="checkbox" name="hobby" value="운동">
+    <span>영어 : </span><input type="checkbox" name="hobby" value="영화">
+    <br>
+
+    나이 : <input type="number">
+    <br>
+
+    범위 : <input type="range">
+    <br>
+
+    날짜 : <input type="date">
+    <br>
+
+    셀렉트선택 : 
+    <select>
+      <option>대한민국</option>
+      <option>중국</option>
+      <option>미국</option>
+    </select>
+    <br>
+
+    하고싶은말
+    <textarea></textarea>
+    <br>
+    <!-- 서브밋으로 폼태그 데이터 서버 전달 -->
+    전송 : <input type="submit">
+  </form>
+</body>
+</html>
